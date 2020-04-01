@@ -51,13 +51,14 @@ $(function () {
         if(num > 4){
             num = 0;
         }
+        showDot();
         if(slider.css("left") === '-7200px'){
             newLeft = -1200;
         }else{
             newLeft = parseInt(slider.css("left"))-1200;
         }
         slider.css("left",newLeft);
-        showDot();
+        
     }
     function prevPic() { 
         num --;
@@ -65,13 +66,14 @@ $(function () {
         if(num < 0){
             num = 4;
         }
+        showDot();
         if(slider.css("left") === '0px'){
             newLeft = -4800;
         }else{
             newLeft = parseInt(slider.css("left"))+1200;
         }
         slider.css("left",newLeft);
-        showDot();
+        
     }
     //自动播放
     function autoPlay () {
