@@ -53,7 +53,7 @@ $(function () {
         }
         showDot();
         if(slider.css("left") === '-7200px'){
-            newLeft = -1200;
+            newLeft = -2400;
         }else{
             newLeft = parseInt(slider.css("left"))-1200;
         }
