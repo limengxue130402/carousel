@@ -94,6 +94,7 @@ $(function () {
     //点击圆点
     for(var j = 0; j< navs.length; j++){
         (function(k) {
+            console.log(k)
             navs[k].onclick = function () { 
                 var index = num - k;
                 if(num == 4 && parseInt(slider.css("left")) !== -6000){
@@ -108,17 +109,4 @@ $(function () {
              }
         })(j)
     }
-
-
-
-
-
-
-
-
-
-
-
-    
-
 })
